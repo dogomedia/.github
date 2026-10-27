@@ -50,6 +50,8 @@ body:
       label: Done when
       description: What will be true once it is done, one item a line.
       placeholder: "- [ ] A teacher copies a quiz to another class and it opens there."
+    validations:
+      required: true
   - type: textarea
     id: technical
     attributes:

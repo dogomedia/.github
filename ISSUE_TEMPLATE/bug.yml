@@ -70,6 +70,8 @@ body:
       label: Done when
       description: What will be true once it is fixed, one item a line.
       placeholder: "- [ ] A lesson of any length saves the first time."
+    validations:
+      required: true
   - type: textarea
     id: technical
     attributes:
