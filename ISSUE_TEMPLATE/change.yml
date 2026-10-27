@@ -1,0 +1,64 @@
+name: Change
+description: Something new, or something that should work differently.
+labels: [enhancement]
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Write for someone who does not read code. Make the title what changes, and for whom.
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: What's wrong
+      description: What is missing or gets in the way today, and for whom.
+      placeholder: Teachers rebuild the same quiz by hand for every class.
+    validations:
+      required: true
+  - type: textarea
+    id: what-we-want
+    attributes:
+      label: What we want
+      description: What people should be able to do, or notice, once it is done.
+      placeholder: A teacher can copy a quiz to another class in one step.
+    validations:
+      required: true
+  - type: textarea
+    id: non-goals
+    attributes:
+      label: Non-goals
+      description: What this change does not do.
+      placeholder: Copying quizzes between schools.
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: How much it matters to the people it is for.
+      options:
+        - Blocks people
+        - Saves real time or effort
+        - Nice to have
+  - type: textarea
+    id: decisions
+    attributes:
+      label: Decisions
+      description: Anything already decided, with the reason.
+      placeholder: A copied quiz starts with no answers, so no student's work moves between classes.
+  - type: textarea
+    id: done-when
+    attributes:
+      label: Done when
+      description: What will be true once it is done, one item a line.
+      placeholder: "- [ ] A teacher copies a quiz to another class and it opens there."
+  - type: textarea
+    id: technical
+    attributes:
+      label: Technical detail
+      description: Code, links or design notes, kept inside the collapsed block.
+      value: |
+        <details>
+        <summary>Technical detail</summary>
+
+
+
+        </details>

@@ -1,0 +1,90 @@
+name: Bug
+description: Something goes wrong for the people using it.
+labels: [bug]
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Write for someone who does not read code. Make the title what goes wrong, and for whom.
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: What's wrong
+      description: What goes wrong, for whom, and when.
+      placeholder: Teachers can't save a lesson once it has more than ten pages.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The steps that make it happen. Write "don't know" if you can't tell.
+      placeholder: |
+        1. Open a lesson with more than ten pages.
+        2. Change a page and press Save.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: Expected and actual
+      description: What you expected to happen, and what happened instead.
+      placeholder: I expected the lesson to save; instead the button spins and nothing is saved.
+    validations:
+      required: true
+  - type: dropdown
+    id: how-often
+    attributes:
+      label: How often
+      description: How often it happens when you follow the steps.
+      options:
+        - Every time
+        - Sometimes
+        - Once
+        - Don't know
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: How badly it gets in people's way.
+      options:
+        - Blocks people
+        - Makes things worse
+        - Cosmetic
+  - type: input
+    id: version
+    attributes:
+      label: Version or environment
+      description: Where you saw it, such as the version, the site or the device.
+      placeholder: The live site, in Safari on an iPad.
+  - type: textarea
+    id: decisions
+    attributes:
+      label: Decisions
+      description: Anything already decided about the fix, with the reason.
+      placeholder: Keep the ten-page lessons people have already saved as they are.
+  - type: textarea
+    id: done-when
+    attributes:
+      label: Done when
+      description: What will be true once it is fixed, one item a line.
+      placeholder: "- [ ] A lesson of any length saves the first time."
+  - type: textarea
+    id: technical
+    attributes:
+      label: Technical detail
+      description: Code, links or notes for whoever fixes it, kept inside the collapsed block.
+      value: |
+        <details>
+        <summary>Technical detail</summary>
+
+
+
+        </details>
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Any error message or log output, pasted as it appeared.
+      render: shell
