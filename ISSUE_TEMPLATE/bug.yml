@@ -1,6 +1,5 @@
 name: Bug
 description: Something goes wrong for the people using it.
-labels: [bug]
 type: Bug
 body:
   - type: markdown
