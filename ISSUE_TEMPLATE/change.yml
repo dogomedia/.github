@@ -1,6 +1,5 @@
 name: Change
 description: Something new, or something that should work differently.
-labels: [enhancement]
 type: Feature
 body:
   - type: markdown
